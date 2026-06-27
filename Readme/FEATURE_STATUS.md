@@ -8,6 +8,6 @@
 | Camera system | ✅ Done | WASD/arrow panning, mouse-wheel zoom, world/screen coordinate conversion, and bounds clamping |
 | Tilemap rendering | ✅ Done | Chunks cache terrain surfaces and only visible chunks are drawn |
 | World generation | ✅ Done | Deterministic elevation/moisture/temperature maps produce first-pass water, beach, grass, forest, hill, mountain, and snow tiles |
-| Entity system | ⏳ Planned | Phase 1 |
+| Entity system | ✅ Done | Base `Entity`, `EntityManager`, seeded human spawning, walkable-tile checks, update loop integration, and camera-aware entity rendering |
 | Combat | ⏳ Planned | Phase 2 |
 | God powers | ⏳ Planned | Phase 3 |
