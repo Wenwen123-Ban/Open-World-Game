@@ -1,0 +1,1 @@
+"""Combat blood splatter effects."""
