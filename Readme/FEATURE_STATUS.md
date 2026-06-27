@@ -9,5 +9,6 @@
 | Tilemap rendering | ✅ Done | Chunks cache terrain surfaces and only visible chunks are drawn |
 | World generation | ✅ Done | Deterministic elevation/moisture/temperature maps produce first-pass water, beach, grass, forest, hill, mountain, and snow tiles |
 | Entity system | ✅ Done | Base `Entity`, `EntityManager`, seeded human spawning, walkable-tile checks, update loop integration, and camera-aware entity rendering |
+| Automated test foundation | ✅ Done | Pytest covers terrain generation, biome thresholds, entity movement, camera coordinate conversions, and cursor-stable zoom behavior |
 | Combat | ⏳ Planned | Phase 2 |
 | God powers | ⏳ Planned | Phase 3 |

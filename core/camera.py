@@ -34,11 +34,11 @@ class Camera:
         self._clamp()
 
     def zoom_at(self, amount: float, screen_pos: tuple[int, int]) -> None:
+        world_x, world_y = self.screen_to_world(screen_pos)
         old_zoom = self.zoom
         self.zoom = max(ZOOM_MIN, min(ZOOM_MAX, self.zoom + amount))
         if self.zoom == old_zoom:
             return
-        world_x, world_y = self.screen_to_world(screen_pos)
         self.x = world_x - screen_pos[0] / self.zoom
         self.y = world_y - screen_pos[1] / self.zoom
         self._clamp()

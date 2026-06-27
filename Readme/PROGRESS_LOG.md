@@ -50,3 +50,20 @@
 
 **Next session goal:**
 - Expand entity variety with animals/monsters or begin simple needs/faction hooks for human civilization behavior.
+
+## 2026-06-27 — Test Foundation
+**Duration:** ~30 minutes
+
+**What was done:**
+- Added pytest coverage for deterministic terrain generation, terrain dimensions, normalized climate values, and key biome classification thresholds.
+- Added entity movement tests for reaching targets and respecting blocked walkability checks.
+- Added camera tests for screen/world coordinate round-tripping and cursor-stable zoom behavior.
+- Fixed camera zoom anchoring so zooming preserves the world position under the cursor.
+- Added a lightweight Pygame test stub so logic tests can run in headless environments before Pygame is installed.
+
+**Decisions made:**
+- Keep the first test suite focused on deterministic simulation logic rather than opening a game window.
+- Continue listing Pygame as a runtime dependency while allowing unit tests to validate non-rendering logic in constrained environments.
+
+**Next session goal:**
+- Add tests for chunk rendering cache behavior once Pygame is available in the environment, then expand entity behavior coverage as animals/monsters are implemented.
