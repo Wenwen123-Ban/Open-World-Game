@@ -1,0 +1,12 @@
+"""Global settings for Open World Game."""
+
+SCREEN_W, SCREEN_H = 1280, 720
+TILE_SIZE = 16
+CHUNK_SIZE = 16
+FPS = 60
+WORLD_W = 512
+WORLD_H = 512
+ZOOM_MIN = 1.0
+ZOOM_MAX = 8.0
+DAY_LENGTH = 3600
+SEASON_DAYS = 30

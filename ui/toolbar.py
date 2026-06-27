@@ -1,0 +1,1 @@
+"""God power selector toolbar."""

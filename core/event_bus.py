@@ -1,0 +1,1 @@
+"""Decoupled event messaging system."""
