@@ -32,3 +32,21 @@
 
 **Next session goal:**
 - Add a small entity foundation: base entity class, entity manager, human wander behavior, and rendering on top of the terrain.
+
+## 2026-06-27 — Phase 1 Entity Foundation
+**Duration:** ~45 minutes
+
+**What was done:**
+- Added a shared base entity with id assignment, tile-position helpers, movement toward targets, and camera-aware circle rendering.
+- Added an entity manager that owns active entities, updates them each frame, and draws them with simple y-depth ordering.
+- Implemented first-pass human behavior: humans idle briefly, pick nearby walkable wander targets, and move only across passable terrain.
+- Integrated entities into the world update/draw path and seeded a small starting human population on walkable tiles.
+- Extended the debug HUD with a live entity count.
+
+**Decisions made:**
+- Keep Phase 1 visuals as simple circles so behavior and simulation plumbing can be validated before sprite work.
+- Let entities query the world through small walkability helpers instead of directly coupling behavior to terrain internals.
+- Use deterministic world-seeded initial placement while allowing moment-to-moment wander timing to feel organic.
+
+**Next session goal:**
+- Expand entity variety with animals/monsters or begin simple needs/faction hooks for human civilization behavior.

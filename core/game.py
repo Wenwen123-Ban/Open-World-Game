@@ -29,6 +29,7 @@ class Game:
             dt = self.clock.tick(FPS) / 1000.0
             self._handle_events()
             self.camera.update(dt)
+            self.world.update(dt)
             self._draw()
         pygame.quit()
 
@@ -51,6 +52,7 @@ class Game:
         lines = [
             "WASD/Arrows: pan  Mouse wheel: zoom  Esc: quit",
             f"Camera=({self.camera.x:.0f}, {self.camera.y:.0f}) Zoom={self.camera.zoom:.2f} FPS={self.clock.get_fps():.0f}",
+            f"Entities={len(self.world.entities)} Humans wandering on walkable land",
         ]
         for index, text in enumerate(lines):
             surface = self.font.render(text, True, (235, 226, 190))
